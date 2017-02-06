@@ -1,0 +1,467 @@
+/*
+------------------
+strt header
+-----------------*/
+.header{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+}
+.headerLogo img {
+    width: 187px;
+    height: 62px;
+}
+.headerInfo{
+    position: relative;
+    margin-top: 20px;
+}
+.headerInfo i{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #f8c12c;
+    margin-right: 20px;
+
+}
+.headerInfo span{
+    color: #929292;
+    font-size: 14px;
+    margin-left: 5px;
+    font-family: 'open',sans-serif;
+}
+.headerInfo a {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    color: #333;
+    background: #f8c12c;
+    padding: 12px;
+    border-radius: 4px;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+.headerInfo a:hover{
+    background: #333;
+    color: #fff;
+}
+
+/*
+-----------------------------
+end header section
+-----------------------*/
+
+
+/*
+----------------------
+start menu
+---------------------
+*/
+.headerMenu {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background: #333;
+    padding: 40px 0px;
+}
+.Hmenu ul{
+    padding: 0;
+    margin: 0;
+}
+.Hmenu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+    position: relative;
+}
+.Hmenu ul li:hover::after{
+    position: absolute;
+    left: 0;
+    top: 57px;
+    width: 100%;
+    height: 3px;
+    background: #f8c12c;
+    content: '';
+
+}
+.Hmenu ul li a {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    padding-bottom: 40px;
+}
+
+.Hmenu ul li a:hover{
+    color: #f8c12c;
+}
+.Hmenu ul .submenu {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 231px;
+    height: auto;
+    display: block;
+    background: #333;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    z-index: 1;
+
+}
+.Hmenu ul li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    top: 60px;
+}
+.Hmenu ul .submenu li {
+    margin-left: 28px;
+    margin-bottom: 17px;
+}
+.Hmenu ul .submenu li:hover::after{
+    display: none;
+}
+.Hmenu ul .submenu li a{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.menusocail a {
+    border: 1px solid #333;
+    border-radius: 50%;
+    font-size: 13px;
+    color: #fff;
+    padding: 11px 13px;
+    margin-right: 20px;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+.menusocail a:hover{
+    background: #f8c12c;
+}
+.menusocail a:last-child {
+    margin-right: 0!important;
+}
+
+.face{
+    background: #337ab7;
+    padding: 11px 15px !important;
+    border-color: #337ab7;
+}
+.twi{
+    background: #68a9e1;
+    border-color: #68a9e1;
+}
+.lin{
+    background: #0BCFF9;
+    border-color: #0BCFF9;
+}
+.goo{
+    background: #de3c2f;
+    border-color: #de3c2f;
+    padding: 11px 11px !important;
+}
+
+
+/*
+--------------------------
+end menu section
+-------------------------
+*/
+.sliderSec{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.slider{
+    background: url(../images/bg2.jpg) no-repeat center center /cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 150px 0;
+}
+.slider2{
+    background: url(../images/placeholder2.jpg) no-repeat center center /cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 150px 0;
+}
+.slider3{
+    background: url(../images/placeholder3.jpg) no-repeat center center /cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 150px 0;
+}
+.slider:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    content: '';
+}
+.slider2:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    content: '';
+}
+.slider3:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    content: '';
+}
+.sliderContent h4{
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f8c12c;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
+}
+.sliderContent h1{
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.sliderContent span{
+    color: #f8c12c;
+}
+.sliderContent p {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #ddd;
+    line-height: 20px;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+.sliderContent a {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 15px 30px;
+    background: #f8c12c;
+    border-radius: 4px;
+    color: #333;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+.sliderContent a:hover{
+    background: #333;
+    color: #fff;
+}
+
+/*
+-----------------------------
+learn more section
+-------------------------*/
+.learnMoreSec{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url(../images/CTA-bg-3.jpg) no-repeat center center /cover;
+    padding: 50px 0;
+}
+.learnMoreCont h2{
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #333;
+    letter-spacing: 1.5px;
+}
+.moreBtn.sliderContent a{
+    background: #333;
+    color: #fff;
+}
+.moreBtn.sliderContent a:hover{
+    color: #f8c12c;
+}
+
+/*---------------
+end slider section 
+-------------------
+
+
+/*---------------
+start partnar section 
+-------------------*/
+.partnerSec{
+    position: relative;
+    padding: 50px 0;
+}
+.singlePartner{
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+.singlePartner:hover{
+    transform: scale(1.1);
+}
+.singlePartner img {
+    height: 100%;
+    width: 60%;
+}
+.singlePartner h2 {
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.singlePartner p {
+    color: #facc3d;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+/*---------------
+end parner section 
+-------------------
+*/
+
+
+
+
+/*===================
+/CmFooterSec Start here by shagor
+======================*/
+.CmFooterSec{
+    background: #242424 none repeat scroll 0 0;
+    height: 100%;
+    overflow: hidden;
+    padding: 55px 0 50px;
+    position: relative;
+    width: 100%;
+}
+.SingleCmFooter{
+    width: 100%;
+    height: 100%; 
+}
+.SingleCmFooter h2{
+    color: #f8c12c;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.FSerMenu{
+    padding: 30px 0 0;
+}
+.FSerMenu a{
+    color: #b2b2b2;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 5px;
+    transition:all ease 600ms;
+    -moz-transition:all ease 600ms;
+    -webkit-transition:all ease 600ms;
+    -o-transition:all ease 600ms;
+}
+.FSerMenu a:hover{
+    color: #f8c12c;
+}
+.FSerMenu p{
+    color: #b2b2b2;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.FLogo a {
+    color: #d1d1d1;
+    font-size: 32px;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script', cursive;
+}
+.FLogo span{
+    color: #f8c12c;
+}
+.FLogo p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #b2b2b2;
+    padding-top: 15px;
+}
+.FserGroup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.FSerMail{
+    width: 100%;
+    padding: 9px 52px 9px 9px;
+    color: #b2b2b2;
+    font-size: 15px;
+}
+.NewsLBtn{
+    background-color: #f8c12c;
+    border: 0 none;
+    box-shadow: none;
+    color: #fff;
+    height: 40px;
+    padding: 0 14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-transform: uppercase;
+}
+/*===================
+/CmFooterSec End here by shagor
+======================*/
+
+/*---------------------
+start footer section 
+----------------
+*/
+.footer{
+    background: #333;
+    padding: 20px 0;
+}
+.footerwedget p{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+    left: 0;
+    top: 136px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-top: 13px;
+}
+.footerwedget p a{
+    color: #f8c12c;
+}
+
