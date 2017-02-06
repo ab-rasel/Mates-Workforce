@@ -1,17 +1,17 @@
 
 $(document).ready(function () {
-    $('.sSlider').owlCarousel({
+    $('.sliderSec').owlCarousel({
         items: 1,
         loop: true,
         nav: false,
         dots: false,
         pagination: false,
-        touchDrag: false,
+        touchDrag: true,
         responsiveClass: true,
         navigationText: false,
         navigation: false,
         autoPlay: true,
-        mouseDrag: false,
+        mouseDrag: true,
         responsive: {
             0: {
                 items: 1
@@ -54,4 +54,4 @@ $(document).ready(function () {
         $('html, body').animate({scrollTop: 0}, 800);
     });
 
-
+});
