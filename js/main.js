@@ -11,7 +11,7 @@ $(document).ready(function () {
         navigationText: false,
         navigation: false,
         autoPlay: true,
-        mouseDrag: true,
+        mouseDrag: false,
         responsive: {
             0: {
                 items: 1
