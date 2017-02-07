@@ -308,7 +308,88 @@ learn more section
 
 /*---------------
 end slider section 
--------------------
+-------------------*/
+
+/*---------------
+start employers section 
+-------------------*/
+.employearsSec{
+    padding: 80px 0;
+    background: url(../images/bg1.png) no-repeat center center /cover;
+    position: relative;
+}
+.employearsSec:before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    background: rgba(0,0,0,.4);
+}
+
+.employersPart h2{
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fff;
+    margin-bottom: 13px;
+
+}
+.employersPart p{
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 20px;
+    color: #f1f1f1;
+    margin-bottom: 12px;
+}
+.employersPart ul li{
+    list-style: circle;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.employersPart ul li a {
+    color: #f8c12c;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all 500ms ease 0s;
+}
+.employersPart ul li a:hover{
+    color: #fff;
+}
+.ab-btun{
+    margin-top: 24px;
+}
+.ab-btun a {
+    background: #f8c12c none repeat scroll 0 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 9px;
+    text-transform: capitalize;
+}
+.employersImg {
+    width: 100%;
+    height: auto;
+}
+.employersImg img {
+    box-shadow: 10px 11px 7px #ddd;
+    height: 100%;
+    width: 100%;
+}
+#aboutmore{
+    margin-top: 80px;
+}
+.employersPart.employersPart1{
+    margin-left: 40px;
+}
+
+/*---------------
+end employers section 
+-------------------*/
 
 
 /*---------------
@@ -465,3 +546,294 @@ start footer section
     color: #f8c12c;
 }
 
+
+/*
+=========================================================================
+about page start
+=========================================================================
+*/
+.aboutmeSec{
+    background: url(../images/aboutbg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    padding: 80px 0;
+}
+.aboutmeSec:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0, 0, .5);
+    content: '';
+}
+.aboutMeContent h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.aboutMeContent ul li {
+    color: #f8c12c;
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 35px;
+    position: relative;
+    text-transform: uppercase;
+}
+.aboutMeContent ul li::after {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    left: -16px;
+    position: absolute;
+    top: 10px;
+    width: 10px;
+}
+
+
+/*
+-------------------
+approc section
+----------------------
+*/
+.approachSec{
+    padding: 80px;
+}
+.approachItem h2{
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 18px;
+
+}
+.approachItem p{
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 12px;
+    text-align: justify;
+
+}
+.approachImg{
+    width: 100%;
+    height: 525px;
+}
+.approachImg img{
+    width: 100%;
+    height: 100%;
+}
+.approachImg.approachImg1{
+    width: 100%;
+    height: auto;
+}
+
+.servimg{
+    width: 100%;
+    height: auto;
+}
+.servimg img{
+    margin: 0 auto;
+}
+.appteam li {
+    color: #999999;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 20px;
+    text-align: justify;
+    position: relative;
+}
+.appteam li:after{
+    background: #333 none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    left: -20px;
+    position: absolute;
+    top: 10px;
+    width: 10px;
+}
+.approachSec1{
+    background: #f1f1f1;
+    padding: 80px 0;
+}
+
+
+/*
+----------------------------------
+contact page
+---------------------------------*/
+.gettouchContent h2{
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+.gettouchContent h2 span{
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.gettouchContent p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/*
+--------------------------
+contact form
+------------------------*/
+.contactFormSec{
+    padding: 80px 0;
+    background: rgb(250, 250, 250);
+}
+
+.input-group{
+    width: 100%;
+    height: auto;
+}
+.input-group label{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 5px;
+}
+.inName {
+    border: 3px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 0 5px #ddd;
+    color: #999;
+    font-size: 16px;
+    height: 44px;
+    margin-bottom: 12px;
+    padding-left: 13px;
+    text-transform: capitalize;
+    width: 80%;
+}
+.inName:focus{
+    border-color: #f8c12c;
+}
+.conForm .buton {
+    background: #f8c12c none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 700;
+    padding: 8px 29px;
+    text-transform: capitalize;
+    transition:all ease 600ms;
+    -moz-transition:all ease 600ms;
+    -webkit-transition:all ease 600ms;
+    -o-transition:all ease 600ms;
+}
+
+.conForm .buton:hover{
+    background: #333;
+}
+.inName.msgbox{
+    height: 200px;
+    resize: none;
+}
+
+
+.contactInfo{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+.conIcon{
+    width: 20%;
+    float: left;
+}
+.conIcon i {
+    border: 2px solid #D4BA49;
+    border-radius: 50%;
+    color: #f8c12c;
+    font-size: 50px;
+    padding: 11px 21px;
+}
+.conIcon1 i {
+    padding: 13px 18px;
+}
+.conIcon2 i {
+    padding: 13px 14px;
+}
+.contactText{
+    width: 80%;
+    float: left;
+}
+.contactText h3 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+.contactText p{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #999;
+
+}
+.hireme{
+    background: #fff;
+    padding: 15px;
+    margin-top: 80px;
+}
+.hireme h3{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 8px;
+}
+.hireme p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    margin-bottom: 6px;
+}
+.hireme a{
+    font-size: 14px;
+    color: rgb(23, 126, 229);
+    text-transform: capitalize;
+    transition:all ease 600ms;
+    -moz-transition:all ease 600ms;
+    -webkit-transition:all ease 600ms;
+    -o-transition:all ease 600ms;
+}
+.hireme a:hover{
+    color: #f8c12c;
+}
+
+/*
+--------------------------------
+clien discus
+--------------------------
+*/
+.clienQoute {
+    border: 1px solid #999999;
+    padding: 52px 20px 70px;
+}
+.clienQoute h1{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #333;
+    float: left;
+}
+.clienQoute a{
+    float: left;
+    padding: 15px;
+    background: #f8c12c;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
