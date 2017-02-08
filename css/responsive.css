@@ -1,7 +1,24 @@
 @media (min-width:320px) and (max-width:480px){
-    .logo{
-        width: 100%;
-        text-align: center;
+    .headerInfo a {
+        background: #f8c12c none repeat scroll 0 0;
+        border-radius: 4px;
+        color: #333;
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        height: 20%;
+        letter-spacing: 0.5px;
+        padding: 12px;
+        text-transform: capitalize;
+        transition: all 500ms ease 0s;
+        width: 44%;
+        margin-top: 12px;
+    }
+    .Hmenu{
+        display: none;
+    }
+    .menusocail a {
+        margin-right: 15px;
     }
     .MobileMenu {
         cursor: pointer !important;
@@ -10,7 +27,7 @@
         line-height: 0.2;
         width: 30px;
         position: absolute;
-        top: 39px;
+        top: 0;
         right: 17px;
         z-index: 9999;
     }
@@ -20,34 +37,44 @@
         height: 2px;
         width: 100%;
     }
-    .Menu{
-        width: 100%;
+    .fixedHeader {
+        padding: 30px 6px;
     }
-    .Menu ul {
-        background: #000;
-        display: none;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        top: 101px;
-        width: 100%;
-        z-index: 999;
-        opacity: .7;
+    .sliderContent h1 {
+        font-size: 33px;
     }
-    .Menu ul li {
-        cursor: pointer;
-        display: block;
-        padding: 14px 0;
+    .sliderContent h4{
+        font-size: 20px;
     }
-    .Menu ul li a{
-        display: block;
+    .sliderContent p {
+        font-size: 14px;
     }
-    .Menu ul li:hover .Submenu{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 150px;
-        visibility: visible;
-        opacity: 1;
+    .slider {
+        padding: 70px 0;
+    }
+    .slider3{
+        padding: 70px 0;
+    }
+    .slider2{
+        padding: 70px 0;
+    }
+    .pull-right {
+        float: left !important;
+        margin-top: 27px;
+    }
+    .ab-btun {
+        margin-bottom: 48px;
+    }
+    .employersPart h2 {
+        margin-top: 30px;
+    }
+    .employearsSec{
+        padding: 25px 0;
+    }
+    .partnerSec {
+        padding: 25px 0;
+    }
+    .singlePartner{
+        margin-bottom: 24px;
     }
 }

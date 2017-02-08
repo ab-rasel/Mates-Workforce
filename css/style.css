@@ -2,6 +2,17 @@
 ------------------
 strt header
 -----------------*/
+.fixedHeader{
+    left: 0;
+    top: 0;
+    background: #000;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 999;
+    padding: 40px 0;
+}
+
 .header{
     position: relative;
     width: 100%;
@@ -108,7 +119,7 @@ start menu
     position: absolute;
     left: 0;
     top: 80px;
-    width: 231px;
+    width: 270px;
     height: auto;
     display: block;
     background: #333;
@@ -119,6 +130,7 @@ start menu
     -webkit-transition: all ease 500ms;
     -o-transition: all ease 500ms;
     z-index: 1;
+    padding-bottom: 12px;
 
 }
 .Hmenu ul li:hover .submenu{
@@ -128,13 +140,13 @@ start menu
 }
 .Hmenu ul .submenu li {
     margin-left: 28px;
-    margin-bottom: 17px;
+    padding-top: 12px;
 }
 .Hmenu ul .submenu li:hover::after{
     display: none;
 }
 .Hmenu ul .submenu li a{
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 14px;
 }
 .menusocail a {
@@ -315,8 +327,9 @@ start employers section
 -------------------*/
 .employearsSec{
     padding: 80px 0;
-    background: url(../images/bg1.png) no-repeat center center /cover;
+    background: url(../images/mainbg.jpg) no-repeat center center /cover;
     position: relative;
+    background-attachment: fixed;
 }
 .employearsSec:before{
     width: 100%;
@@ -325,7 +338,7 @@ start employers section
     left: 0;
     top: 0;
     content: '';
-    background: rgba(0,0,0,.4);
+    background: rgba(0,0,0,.7);
 }
 
 .employersPart h2{
@@ -512,7 +525,7 @@ end parner section
     border: 0 none;
     box-shadow: none;
     color: #fff;
-    height: 40px;
+    height: 41px;
     padding: 0 14px;
     position: absolute;
     right: 0;
@@ -575,6 +588,9 @@ about page start
     letter-spacing: 1.5px;
     margin-bottom: 5px;
     text-transform: uppercase;
+}
+.aboutMeContent h2 span{
+    color: #f8c12c;
 }
 .aboutMeContent ul li {
     color: #f8c12c;
@@ -692,7 +708,7 @@ contact form
 ------------------------*/
 .contactFormSec{
     padding: 80px 0;
-    background: rgb(250, 250, 250);
+    background: #ddd;
 }
 
 .input-group{
@@ -710,7 +726,7 @@ contact form
     border: 3px solid #ddd;
     border-radius: 6px;
     box-shadow: 0 0 5px #ddd;
-    color: #999;
+    color: #333;
     font-size: 16px;
     height: 44px;
     margin-bottom: 12px;
@@ -719,18 +735,19 @@ contact form
     width: 80%;
 }
 .inName:focus{
-    border-color: #f8c12c;
+    border-color: #827717;
 }
 .conForm .buton {
     background: #f8c12c none repeat scroll 0 0;
     color: #fff;
     font-weight: 700;
     padding: 8px 29px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     transition:all ease 600ms;
     -moz-transition:all ease 600ms;
     -webkit-transition:all ease 600ms;
     -o-transition:all ease 600ms;
+
 }
 
 .conForm .buton:hover{
@@ -818,22 +835,200 @@ contact form
 clien discus
 --------------------------
 */
+.clienDescusSec {
+    padding: 80px 0;
+}
 .clienQoute {
-    border: 1px solid #999999;
-    padding: 52px 20px 70px;
+    border: 3px solid #ddd;
+    box-shadow: 0 6px 0;
+    padding: 41px 20px 80px;
 }
 .clienQoute h1{
-    font-size: 25px;
+    font-size: 32px;
     font-weight: 400;
     text-transform: capitalize;
     color: #333;
     float: left;
+    margin-left: 34px;
 }
-.clienQoute a{
-    float: left;
-    padding: 15px;
-    background: #f8c12c;
-    font-size: 16px;
+.clienQoute a {
+    background: #f8c12c none repeat scroll 0 0;
+    border-radius: 12px;
     color: #fff;
-    cursor: pointer;
+    float: left;
+    font-size: 16px;
+    margin-left: 109px;
+    padding: 12px 25px;
+    transition:all ease 600ms;
+    -moz-transition:all ease 600ms;
+    -webkit-transition:all ease 600ms;
+    -o-transition:all ease 600ms;
+    text-transform: uppercase;
+}
+.clienQoute a:hover{
+    background: #333;
+}
+
+
+/*
+------------------------------
+our client section
+------------------------------
+*/
+.ourClienSec{
+    padding: 80px 0;
+    position: relative;
+}
+
+.clientItem h2 {
+    color: #f8c12c;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+}
+.clientItem h2 label{
+    color: #333;
+}
+.clientItem p{
+    font-size: 20px;
+    color: #111;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+.clientItem p span{
+    font-weight: 700;
+    color: #f8c12c;
+}
+.partnerTitle{
+    margin-bottom: 20px;
+    position: relative;
+}
+.partnerTitle span{
+    color: #facc3d;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/*
+------------------------------
+candidate approach section
+---------------------------------
+*/
+.candidateApproachSec{
+    padding: 80px 0;
+}
+.CapproachItem h2{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: #333;
+    margin-bottom: 12px;
+
+}
+.CapproachItem img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+.CapproachItem p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.cApproachImg{
+    width: 100%;
+    height: auto;
+}
+.cApproachImg img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px #000;
+    margin: 50px;
+}
+.tipsItem li {
+    color: #111;
+    font-size: 16px;
+    font-weight: 300;
+    list-style: outside none symbols;
+    margin-bottom: 12px;
+    margin-left: 32px;
+}
+.candidatetestmonilas{
+    background: #ddd;
+    padding: 50px 50px;
+}
+.candidatetestmonilas h2 {
+    color: #111;
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    text-transform: capitalize;
+}
+.testmonialsItem p {
+    margin-bottom: 14px;
+    margin-top: 13px;
+}
+.testmonialsItem span{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00c853;
+    font-family: 'Kaushan Script', cursive;
+}
+.testmonialsItem{
+    padding-bottom: 50px;
+}
+
+
+/*
+------------------------------------
+singleQuestion
+-----------------------------------*/
+.questionerSec{
+    padding: 50px 0;
+}
+.singleQuestion h2 {
+    color: #111;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+}
+.singleQuestion {
+    margin-bottom: 15px;
+}
+.singleQuestion p {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    line-height: 23px;
+}
+.singleQuestion ul li {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    list-style: outside none symbols;
+    margin-bottom: 12px;
+    margin-left: 51px;
+}
+.conForm h2 {
+    color: #333;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.cvItem{
+    margin-top: 60px;
 }
