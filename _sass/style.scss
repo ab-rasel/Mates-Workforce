@@ -442,7 +442,16 @@ start partnar section
     text-transform: capitalize;
   }
 }
-
+.PrtTitle{
+    position: relative;
+    h2{
+        font-size: 15px;
+        font-weight: 700;
+        color: #111;
+        margin-bottom: 14px;
+        width: 100%;
+    }
+}
 /*---------------
 end parner section 
 -------------------
