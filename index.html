@@ -4,68 +4,12 @@ title: Home
 ---
 
         <!--start slider section-->
-        <section class="sliderSec">
-            <div class="slider">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="sliderContent">
-                                <h4>welcome to</h4>
-                                <h1>mates <span>work</span>force</h1>
-                                <p> If you want to hire skilled labour, look no further. If you want to <br> hire skilled labour, look no further. </p>
-                                <a href="">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="sliderContent">
-                                <h4>welcome to</h4>
-                                <h1>mates <span>work</span>force</h1>
-                                <p> If you want to hire skilled labour, look no further. If you want to <br> hire skilled labour, look no further. </p>
-                                <a href="">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="sliderContent">
-                                <h4>welcome to</h4>
-                                <h1>mates <span>work</span>force</h1>
-                                <p> If you want to hire skilled labour, look no further. If you want to <br> hire skilled labour, look no further. </p>
-                                <a href="">learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        {% include slider.html %}
         <!--end slider section-->
-
-        <!--start learn more section-->
-        <section class="learnMoreSec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="learnMoreCont pull-left">
-                            <h2>We Won Many company Awards & Got Many Ceritificates Since 2001-2017</h2>
-                        </div>
-                        <div class="moreBtn sliderContent pull-right">
-                            <a href="">learn more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--end learn more section-->
+        
+        
+        
+        {% include learmore.html %}
 
         <!--start about us-->
         <section class="employearsSec">
@@ -121,26 +65,4 @@ title: Home
 
         <!-- end about section-->
 
-        <!--start pertnarSec-->
-        <section class="partnerSec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="singlePartner text-center">
-                            <a href="index.html"><img src="{{ site.baseurl }}assets/images/winfred_logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="singlePartner text-center">
-                            <a href="index.html"><img src="{{ site.baseurl }}assets/images/globalconnex_logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="singlePartner text-center">
-                            <a href="index.html"><h2>mates global</h2></a>
-                            <a href="index.html"><p>corporate business</p></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        {% include partnar.html %}
