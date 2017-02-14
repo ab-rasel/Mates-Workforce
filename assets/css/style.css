@@ -1,2 +1,1034 @@
-.hero h1 {
-  color: #f00; }
+/*
+------------------
+strt header
+-----------------*/
+.fixedHeader{
+    left: 0;
+    top: 0;
+    background: #000;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 999;
+    padding: 40px 0;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+}
+.headerLogo img {
+    width: 187px;
+    height: 62px;
+}
+.headerInfo{
+    position: relative;
+    margin-top: 20px;
+}
+.headerInfo i{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #f8c12c;
+    margin-right: 20px;
+
+}
+.headerInfo span{
+    color: #929292;
+    font-size: 14px;
+    margin-left: 5px;
+    font-family: 'open',sans-serif;
+}
+.headerInfo a {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    color: #333;
+    background: #f8c12c;
+    padding: 12px;
+    border-radius: 4px;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+.headerInfo a:hover{
+    background: #333;
+    color: #fff;
+}
+
+/*
+-----------------------------
+end header section
+-----------------------*/
+
+
+/*
+----------------------
+start menu
+---------------------
+*/
+.headerMenu {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background: #333;
+    padding: 40px 0px;
+}
+.Hmenu ul{
+    padding: 0;
+    margin: 0;
+}
+.Hmenu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+    position: relative;
+}
+.Hmenu ul li:hover::after{
+    position: absolute;
+    left: 0;
+    top: 57px;
+    width: 100%;
+    height: 3px;
+    background: #f8c12c;
+    content: '';
+
+}
+.Hmenu ul li a {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    padding-bottom: 40px;
+}
+
+.Hmenu ul li a:hover{
+    color: #f8c12c;
+}
+.Hmenu ul .submenu {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 270px;
+    height: auto;
+    display: block;
+    background: #333;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+    z-index: 1;
+    padding-bottom: 12px;
+
+}
+.Hmenu ul li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    top: 60px;
+}
+.Hmenu ul .submenu li {
+    margin-left: 28px;
+    padding-top: 12px;
+}
+.Hmenu ul .submenu li:hover::after{
+    display: none;
+}
+.Hmenu ul .submenu li a{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.menusocail a {
+    border: 1px solid #333;
+    border-radius: 50%;
+    font-size: 13px;
+    color: #fff;
+    padding: 11px 13px;
+    margin-right: 20px;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+.menusocail a:hover{
+    background: #f8c12c;
+}
+.menusocail a:last-child {
+    margin-right: 0!important;
+}
+
+.face{
+    background: #337ab7;
+    padding: 11px 15px !important;
+    border-color: #337ab7;
+}
+.twi{
+    background: #68a9e1;
+    border-color: #68a9e1;
+}
+.lin{
+    background: #0BCFF9;
+    border-color: #0BCFF9;
+}
+.goo{
+    background: #de3c2f;
+    border-color: #de3c2f;
+    padding: 11px 11px !important;
+}
+
+
+/*
+--------------------------
+end menu section
+-------------------------
+*/
+.sliderSec{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.slider{
+    background: url(../images/bg2.jpg) no-repeat center center /cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 150px 0;
+}
+.slider2{
+    background: url(../images/placeholder2.jpg) no-repeat center center /cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 150px 0;
+}
+.slider3{
+    background: url(../images/placeholder3.jpg) no-repeat center center /cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 150px 0;
+}
+.slider:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    content: '';
+}
+.slider2:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    content: '';
+}
+.slider3:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    content: '';
+}
+.sliderContent h4{
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f8c12c;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
+}
+.sliderContent h1{
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.sliderContent span{
+    color: #f8c12c;
+}
+.sliderContent p {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #ddd;
+    line-height: 20px;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+.sliderContent a {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 15px 30px;
+    background: #f8c12c;
+    border-radius: 4px;
+    color: #333;
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+.sliderContent a:hover{
+    background: #333;
+    color: #fff;
+}
+
+/*
+-----------------------------
+learn more section
+-------------------------*/
+.learnMoreSec{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url(../images/CTA-bg-3.jpg) no-repeat center center /cover;
+    padding: 50px 0;
+}
+.learnMoreCont h2{
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #333;
+    letter-spacing: 1.5px;
+}
+.moreBtn.sliderContent a{
+    background: #333;
+    color: #fff;
+}
+.moreBtn.sliderContent a:hover{
+    color: #f8c12c;
+}
+
+/*---------------
+end slider section 
+-------------------*/
+
+/*---------------
+start employers section 
+-------------------*/
+.employearsSec{
+    padding: 80px 0;
+    background: url(../images/mainbg.jpg) no-repeat center center /cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.employearsSec:before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    background: rgba(0,0,0,.7);
+}
+
+.employersPart h2{
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fff;
+    margin-bottom: 13px;
+
+}
+.employersPart p{
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 20px;
+    color: #f1f1f1;
+    margin-bottom: 12px;
+}
+.employersPart ul li{
+    list-style: circle;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.employersPart ul li a {
+    color: #f8c12c;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all 500ms ease 0s;
+}
+.employersPart ul li a:hover{
+    color: #fff;
+}
+.ab-btun{
+    margin-top: 24px;
+}
+.ab-btun a {
+    background: #f8c12c none repeat scroll 0 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 9px;
+    text-transform: capitalize;
+}
+.employersImg {
+    width: 100%;
+    height: auto;
+}
+.employersImg img {
+    box-shadow: 10px 11px 7px #ddd;
+    height: 100%;
+    width: 100%;
+}
+#aboutmore{
+    margin-top: 80px;
+}
+.employersPart.employersPart1{
+    margin-left: 40px;
+}
+
+/*---------------
+end employers section 
+-------------------*/
+
+
+/*---------------
+start partnar section 
+-------------------*/
+.partnerSec{
+    position: relative;
+    padding: 50px 0;
+}
+.singlePartner{
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all ease 500ms;
+    -moz-transition: all ease 500ms;
+    -webkit-transition: all ease 500ms;
+    -o-transition: all ease 500ms;
+}
+.singlePartner:hover{
+    transform: scale(1.1);
+}
+.singlePartner img {
+    height: 100%;
+    width: 60%;
+}
+.singlePartner h2 {
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.singlePartner p {
+    color: #facc3d;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+/*---------------
+end parner section 
+-------------------
+*/
+
+
+
+
+/*===================
+/CmFooterSec Start here by shagor
+======================*/
+.CmFooterSec{
+    background: #242424 none repeat scroll 0 0;
+    height: 100%;
+    overflow: hidden;
+    padding: 55px 0 50px;
+    position: relative;
+    width: 100%;
+}
+.SingleCmFooter{
+    width: 100%;
+    height: 100%; 
+}
+.SingleCmFooter h2{
+    color: #f8c12c;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.FSerMenu{
+    padding: 30px 0 0;
+}
+.FSerMenu a{
+    color: #b2b2b2;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 5px;
+    transition:all ease 600ms;
+    -moz-transition:all ease 600ms;
+    -webkit-transition:all ease 600ms;
+    -o-transition:all ease 600ms;
+}
+.FSerMenu a:hover{
+    color: #f8c12c;
+}
+.FSerMenu p{
+    color: #b2b2b2;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.FLogo a {
+    color: #d1d1d1;
+    font-size: 32px;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script', cursive;
+}
+.FLogo span{
+    color: #f8c12c;
+}
+.FLogo p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #b2b2b2;
+    padding-top: 15px;
+}
+.FserGroup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.FSerMail{
+    width: 100%;
+    padding: 9px 52px 9px 9px;
+    color: #b2b2b2;
+    font-size: 15px;
+}
+.NewsLBtn{
+    background-color: #f8c12c;
+    border: 0 none;
+    box-shadow: none;
+    color: #fff;
+    height: 41px;
+    padding: 0 14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-transform: uppercase;
+}
+/*===================
+/CmFooterSec End here by shagor
+======================*/
+
+/*---------------------
+start footer section 
+----------------
+*/
+.footer{
+    background: #333;
+    padding: 20px 0;
+}
+.footerwedget p{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+    left: 0;
+    top: 136px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-top: 13px;
+}
+.footerwedget p a{
+    color: #f8c12c;
+}
+
+
+/*
+=========================================================================
+about page start
+=========================================================================
+*/
+.aboutmeSec{
+    background: url(../images/aboutbg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    padding: 80px 0;
+}
+.aboutmeSec:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0, 0, .5);
+    content: '';
+}
+.aboutMeContent h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.aboutMeContent h2 span{
+    color: #f8c12c;
+}
+.aboutMeContent ul li {
+    color: #f8c12c;
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 35px;
+    position: relative;
+    text-transform: uppercase;
+}
+.aboutMeContent ul li::after {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    left: -16px;
+    position: absolute;
+    top: 10px;
+    width: 10px;
+}
+
+
+/*
+-------------------
+approc section
+----------------------
+*/
+.approachSec{
+    padding: 80px;
+}
+.approachItem h2{
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 18px;
+
+}
+.approachItem p{
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 12px;
+    text-align: justify;
+
+}
+.approachImg{
+    width: 100%;
+    height: 525px;
+}
+.approachImg img{
+    width: 100%;
+    height: 100%;
+}
+.approachImg.approachImg1{
+    width: 100%;
+    height: auto;
+}
+
+.servimg{
+    width: 100%;
+    height: auto;
+}
+.servimg img{
+    margin: 0 auto;
+}
+.appteam li {
+    color: #999999;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 20px;
+    text-align: justify;
+    position: relative;
+}
+.appteam li:after{
+    background: #333 none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    height: 10px;
+    left: -20px;
+    position: absolute;
+    top: 10px;
+    width: 10px;
+}
+.approachSec1{
+    background: #f1f1f1;
+    padding: 80px 0;
+}
+
+
+/*
+----------------------------------
+contact page
+---------------------------------*/
+.gettouchContent h2{
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+.gettouchContent h2 span{
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.gettouchContent p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/*
+--------------------------
+contact form
+------------------------*/
+.contactFormSec{
+    padding: 80px 0;
+    background: #ddd;
+}
+
+.input-group{
+    width: 100%;
+    height: auto;
+}
+.input-group label{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 5px;
+}
+.inName {
+    border: 3px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 0 5px #ddd;
+    color: #333;
+    font-size: 16px;
+    height: 44px;
+    margin-bottom: 12px;
+    padding-left: 13px;
+    text-transform: capitalize;
+    width: 80%;
+}
+.inName:focus{
+    border-color: #827717;
+}
+.conForm .buton {
+    background: #f8c12c none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 700;
+    padding: 8px 29px;
+    text-transform: uppercase;
+    transition:all ease 600ms;
+    -moz-transition:all ease 600ms;
+    -webkit-transition:all ease 600ms;
+    -o-transition:all ease 600ms;
+
+}
+
+.conForm .buton:hover{
+    background: #333;
+}
+.inName.msgbox{
+    height: 200px;
+    resize: none;
+}
+
+
+.contactInfo{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+.conIcon{
+    width: 20%;
+    float: left;
+}
+.conIcon i {
+    border: 2px solid #D4BA49;
+    border-radius: 50%;
+    color: #f8c12c;
+    font-size: 50px;
+    padding: 11px 21px;
+}
+.conIcon1 i {
+    padding: 13px 18px;
+}
+.conIcon2 i {
+    padding: 13px 14px;
+}
+.contactText{
+    width: 80%;
+    float: left;
+}
+.contactText h3 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+}
+.contactText p{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #999;
+
+}
+.hireme{
+    background: #fff;
+    padding: 15px;
+    margin-top: 80px;
+}
+.hireme h3{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 8px;
+}
+.hireme p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    margin-bottom: 6px;
+}
+.hireme a{
+    font-size: 14px;
+    color: rgb(23, 126, 229);
+    text-transform: capitalize;
+    transition:all ease 600ms;
+    -moz-transition:all ease 600ms;
+    -webkit-transition:all ease 600ms;
+    -o-transition:all ease 600ms;
+}
+.hireme a:hover{
+    color: #f8c12c;
+}
+
+/*
+--------------------------------
+clien discus
+--------------------------
+*/
+.clienDescusSec {
+    padding: 80px 0;
+}
+.clienQoute {
+    border: 3px solid #ddd;
+    box-shadow: 0 6px 0;
+    padding: 41px 20px 80px;
+}
+.clienQoute h1{
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #333;
+    float: left;
+    margin-left: 34px;
+}
+.clienQoute a {
+    background: #f8c12c none repeat scroll 0 0;
+    border-radius: 12px;
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    margin-left: 109px;
+    padding: 12px 25px;
+    transition:all ease 600ms;
+    -moz-transition:all ease 600ms;
+    -webkit-transition:all ease 600ms;
+    -o-transition:all ease 600ms;
+    text-transform: uppercase;
+}
+.clienQoute a:hover{
+    background: #333;
+}
+
+
+/*
+------------------------------
+our client section
+------------------------------
+*/
+.ourClienSec{
+    padding: 80px 0;
+    position: relative;
+}
+
+.clientItem h2 {
+    color: #f8c12c;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+}
+.clientItem h2 label{
+    color: #333;
+}
+.clientItem p{
+    font-size: 20px;
+    color: #111;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+.clientItem p span{
+    font-weight: 700;
+    color: #f8c12c;
+}
+.partnerTitle{
+    margin-bottom: 20px;
+    position: relative;
+}
+.partnerTitle span{
+    color: #facc3d;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/*
+------------------------------
+candidate approach section
+---------------------------------
+*/
+.candidateApproachSec{
+    padding: 80px 0;
+}
+.CapproachItem h2{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: #333;
+    margin-bottom: 12px;
+
+}
+.CapproachItem img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+.CapproachItem p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.cApproachImg{
+    width: 100%;
+    height: auto;
+}
+.cApproachImg img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px #000;
+    margin: 50px;
+}
+.tipsItem li {
+    color: #111;
+    font-size: 16px;
+    font-weight: 300;
+    list-style: outside none symbols;
+    margin-bottom: 12px;
+    margin-left: 32px;
+}
+.candidatetestmonilas{
+    background: #ddd;
+    padding: 50px 50px;
+}
+.candidatetestmonilas h2 {
+    color: #111;
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    text-transform: capitalize;
+}
+.testmonialsItem p {
+    margin-bottom: 14px;
+    margin-top: 13px;
+}
+.testmonialsItem span{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00c853;
+    font-family: 'Kaushan Script', cursive;
+}
+.testmonialsItem{
+    padding-bottom: 50px;
+}
+
+
+/*
+------------------------------------
+singleQuestion
+-----------------------------------*/
+.questionerSec{
+    padding: 50px 0;
+}
+.singleQuestion h2 {
+    color: #111;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+}
+.singleQuestion {
+    margin-bottom: 15px;
+}
+.singleQuestion p {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    line-height: 23px;
+}
+.singleQuestion ul li {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    list-style: outside none symbols;
+    margin-bottom: 12px;
+    margin-left: 51px;
+}
+.conForm h2 {
+    color: #333;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.cvItem{
+    margin-top: 60px;
+}
